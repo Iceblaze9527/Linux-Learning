@@ -71,10 +71,10 @@ Host host_name: 表示需要启用该规则的服务端（域名或ip）
 同时，对于超长时间的SSH监控，需要设置屏幕关闭时不要让电脑休眠，否则依旧会断开
 
 ## 4. SSH Key Generation on Unix/Linux
-1. `$ cd ~./ssh`: open user dir
+1. `$ cd ~/.ssh`: open user dir
 2. `$ ssh-keygen -t rsa -C "email@example.com"`: this would generate two files: `id_rsa` (private key) and `id_rsa.pub` (public key)
 3. `$ cat id_rsa.pub`: get public key
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzcxMTYyMTQ3XX0=
+eyJoaXN0b3J5IjpbOTk1OTUzMDkzLDM3MTE2MjE0N119
 -->
