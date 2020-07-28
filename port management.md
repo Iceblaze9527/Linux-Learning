@@ -32,28 +32,19 @@ unix   1       [ ]    STREAM  CONNECTED  16182   @000000df
 
 ### 1.2 参数
 - `-a (all)`: 显示所有选项，默认不显示LISTEN相关  
+- `-l`: 仅列出有在 Listen (监听) 的服务状态
+- `-n`: 拒绝显示别名，能显示数字的全部转化成数字
+- `-p`: 显示建立相关链接的程序名   
 - `-t (tcp)`: 仅显示tcp相关选项  
 - `-u (udp)`: 仅显示udp相关选项  
-- `-n`: 拒绝显示别名，能显示数字的全部转化成数字。  
-- -l 仅列出有在 Listen (监听) 的服務状态
 
--p 显示建立相关链接的程序名  
--r 显示路由信息，路由表  
--e 显示扩展信息，例如uid等  
--s 按各个协议进行统计  
--c 每隔一个固定时间，执行该netstat命令。
+提示：LISTEN和LISTENING的状态只有用`-a`或者`-l`才能看到
 
-提示：LISTEN和LISTENING的状态只有用-a或者-l才能看到
-
-
-
-
-* `netstat -anp`
 * `netstat -ntlp`: 查看当前所有tcp端口 
 * `netstat -ntulp | grep 3306`:  查看所有3306端口使用情况
 
 https://www.runoob.com/w3cnote/linux-check-port-usage.html
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0OTY2MDcxNF19
+eyJoaXN0b3J5IjpbLTEwNjA1MTE0NzddfQ==
 -->
