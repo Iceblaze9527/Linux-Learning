@@ -13,12 +13,20 @@ tcp    0       0       localhost.localdom:1162  localhost.localdom:9001  ESTABLI
 tcp    0       80      210.34.6.89:1161         210.34.6.10:netbios-ssn  CLOSE
 
 Active UNIX domain sockets (w/o servers)
-Proto RefCnt Flags Type State I-Node Path
-unix 1 [ ] STREAM CONNECTED 16178 @000000dd
-unix 1 [ ] STREAM CONNECTED 16176 @000000dc
-unix 9 [ ] DGRAM 5292 /dev/log
-unix 1 [ ] STREAM CONNECTED 16182 @000000df
+Proto  RefCnt  Flags  Type    State      I-Node  Path
+unix   1       [ ]    STREAM  CONNECTED  16178   @000000dd
+unix   1       [ ]    STREAM  CONNECTED  16176   @000000dc
+unix   9       [ ]    DGRAM   5292       /dev/log
+unix   1       [ ]    STREAM  CONNECTED  16182   @000000df
 ```
+
+- Active Internet connections，称为有源TCP连接，其中"Recv-Q"和"Send-Q"指%0A的是接收队列和发送队列。这些数字一般都应该是0。如果不是则表示软件包正在队列中堆积。这种情况只能在非常少的情况见到。
+
+另一个是Active UNIX domain sockets，称为有源Unix域套接口(和网络套接字一样，但是只能用于本机通信，性能可以提高一倍)。  
+Proto显示连接使用的协议,RefCnt表示连接到本套接口上的进程号,Types显示套接口的类型,State显示套接口当前的状态,Path表示连接到套接口的其它进程使用的路径名。
+
+
+
 
 
 * `netstat -anp`
@@ -28,5 +36,5 @@ unix 1 [ ] STREAM CONNECTED 16182 @000000df
 https://www.runoob.com/w3cnote/linux-check-port-usage.html
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTMyMjAzODFdfQ==
+eyJoaXN0b3J5IjpbMTI1NTE5MDgwXX0=
 -->
