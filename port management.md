@@ -42,14 +42,26 @@ unix   1       [ ]    STREAM  CONNECTED  16182   @000000df
 
 
 ## 2. `lsof`
-
 `lsof(list open files)`是一个列出当前系统打开文件的工具。
 
 ### 2.1 查看端口占用
 - `lsof -i:$PORT`
 
+```
+lsof abc.txt：显示开启文件abc.txt的进程 
+lsof -c abc：显示abc进程现在打开的文件 
+lsof -c -p 1234：列出进程号为1234的进程所打开的文件 
+lsof -g gid：显示归属gid的进程情况 
+lsof +d /usr/local/：显示目录下被进程开启的文件 
+lsof +D /usr/local/：同上，但是会搜索目录下的目录，时间较长 
+lsof -d 4：显示使用fd为4的进程 
+lsof -i -U：显示所有打开的端口和UNIX domain文件
+```
+
+
+
 https://www.runoob.com/w3cnote/linux-check-port-usage.html
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4ODIwMzQzNl19
+eyJoaXN0b3J5IjpbLTU3ODc3NjA1NV19
 -->
