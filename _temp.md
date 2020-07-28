@@ -9,11 +9,30 @@ The shell is basically a program that takes your commands from the keyboard and 
 
 ## 一些命令
 * `date`: 显示当前日期和时间
+* `whoami`: 显示当前用户
 * `alias` : give certain command an alias in one session (expired after reboot)
 * `unalias` : opposite of alias
 * `env` : show environment variable
 * `echo $ENV_VAR_NAME` : show value of certain environment variable on stdout
 * `history` : display history command list
+* `cat /proc/uptime`
+
+2.查看/proc/uptime文件计算系统启动时间  
+
+输出: 5113396.94 575949.85  
+第一数字即是系统已运行的时间5113396.94 秒，运用系统工具date即可算出系统启动时间
+
+代码: [全选](http://bbs.freesinno.com/viewtopic.php?t=66)
+
+`date -d "$(awk -F. '{print $1}' /proc/uptime) second ago" +"%Y-%m-%d %H:%M:%S"`
+
+  
+输出: 2008-11-09 11:50:31  
+  
+3.查看/proc/uptime文件计算系统运行时间
+
+
+
 
 ## 软链接 `ln`
 * `ln -s src_path dst_path`: 创建软链接
@@ -30,16 +49,6 @@ The shell is basically a program that takes your commands from the keyboard and 
 
 https://www.runoob.com/w3cnote/linux-check-port-usage.html
 
-
-
-```sh
-(base) yutongx@simons-1:~$ date
-Fri Jul 17 19:57:18 PDT 2020
-(base) yutongx@simons-1:~$ whoami
-yutongx
-(base) yutongx@simons-1:~$ echo hello
-hello
-```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1NTExMDMyNSwzNzMzNTQxMjldfQ==
+eyJoaXN0b3J5IjpbLTE2MjY0MDQzMTksMzczMzU0MTI5XX0=
 -->
