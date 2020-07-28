@@ -41,7 +41,7 @@ unix   1       [ ]    STREAM  CONNECTED  16182   @000000df
 提示：LISTEN和LISTENING的状态只有用`-a`或者`-l`才能看到
 
 
-## [`lsof`]()
+## [`lsof`](https://linuxtools-rst.readthedocs.io/zh_CN/latest/tool/lsof.html)
 `lsof(list open files)`是一个列出当前系统打开文件的工具。在linux环境下，任何事物都以文件的形式存在，通过文件不仅仅可以访问常规数据，还可以访问网络连接和硬件。如传输控制协议 (TCP) 和用户数据报协议 (UDP) 套接字等，系统在后台都为该应用程序分配了一个文件描述符，该文件描述符提供了大量关于这个应用程序本身的信息。
 
 lsof打开的文件可以是：
@@ -95,5 +95,5 @@ lsof打开的文件可以是：
 * `-n`: 把符号链接视为一般目录
 * `-s`: 软链接(符号链接)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNjU5MjAwM119
+eyJoaXN0b3J5IjpbMTU5NDkyMzgzNV19
 -->
