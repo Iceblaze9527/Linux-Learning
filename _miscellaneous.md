@@ -41,7 +41,7 @@ unix   1       [ ]    STREAM  CONNECTED  16182   @000000df
 提示：LISTEN和LISTENING的状态只有用`-a`或者`-l`才能看到
 
 
-## `lsof`
+## [`lsof`]()
 `lsof(list open files)`是一个列出当前系统打开文件的工具。在linux环境下，任何事物都以文件的形式存在，通过文件不仅仅可以访问常规数据，还可以访问网络连接和硬件。如传输控制协议 (TCP) 和用户数据报协议 (UDP) 套接字等，系统在后台都为该应用程序分配了一个文件描述符，该文件描述符提供了大量关于这个应用程序本身的信息。
 
 lsof打开的文件可以是：
@@ -70,17 +70,6 @@ lsof打开的文件可以是：
 -   `-v`: 显示版本信息
 
 
-```sh
-lsof -i:8080 查看8080端口占用
-lsof abc.txt：显示开启文件abc.txt的进程 
-lsof -c -p 1234：列出进程号为1234的进程所打开的文件 
-lsof -g gid：显示归属gid的进程情况 
-lsof +d /usr/local/：显示目录下被进程开启的文件 
-lsof +D /usr/local/：同上，但是会搜索目录下的目录，时间较长 
-lsof -d 4：显示使用fd为4的进程 
-lsof -i -U：显示所有打开的端口和UNIX domain文件
-```
-
 ## 时间管理
 * `who -b`: 查看最后一次系统启动的时间
 * `who -r`: 查看当前系统运行时间
@@ -106,5 +95,5 @@ lsof -i -U：显示所有打开的端口和UNIX domain文件
 * `-n`: 把符号链接视为一般目录
 * `-s`: 软链接(符号链接)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNzc5MDgxNl19
+eyJoaXN0b3J5IjpbMTMwNjU5MjAwM119
 -->
