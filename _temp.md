@@ -40,13 +40,6 @@ The shell is basically a program that takes your commands from the keyboard and 
 ### 参数含义
 * `-n`: 把符号链接视为一般目录
 * `-s`: 软链接(符号链接)
-
-
-* `netstat -ntlp`: 查看当前所有tcp端口 
-* `netstat -ntulp | grep 3306`:  查看所有3306端口使用情况
-
-https://www.runoob.com/w3cnote/linux-check-port-usage.html
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1OTA5OTkwMSwzNzMzNTQxMjldfQ==
+eyJoaXN0b3J5IjpbLTEzNzQ4MTkwNTMsMzczMzU0MTI5XX0=
 -->
