@@ -40,11 +40,16 @@ unix   1       [ ]    STREAM  CONNECTED  16182   @000000df
 
 提示：LISTEN和LISTENING的状态只有用`-a`或者`-l`才能看到
 
-* `netstat -ntlp`: 查看当前所有tcp端口 
-* `netstat -ntulp | grep 3306`:  查看所有3306端口使用情况
+
+## 2. `lsof`
+
+`lsof(list open files)`是一个列出当前系统打开文件的工具。
+
+### 2.1 查看端口占用
+- `lsof -i:$PORT`
 
 https://www.runoob.com/w3cnote/linux-check-port-usage.html
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzUwODEyNV19
+eyJoaXN0b3J5IjpbLTQ4ODIwMzQzNl19
 -->
