@@ -1,6 +1,6 @@
 # Port Management
 
-## 1. `netstat`
+## 1. [`netstat`](https://www.cnblogs.com/ggjucheng/archive/2012/01/08/2316661.HTML)
 `netstat` 命令用于显示各种网络相关信息，如网络连接，路由表，接口状态 (Interface Statistics)，masquerade 连接，多播成员 (Multicast Memberships) 等等。
 
 ### 1.1 输出信息
@@ -46,5 +46,5 @@ unix   1       [ ]    STREAM  CONNECTED  16182   @000000df
 https://www.runoob.com/w3cnote/linux-check-port-usage.html
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjA1MTE0NzddfQ==
+eyJoaXN0b3J5IjpbLTE4NzUwODEyNV19
 -->
