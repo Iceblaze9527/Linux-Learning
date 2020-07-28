@@ -15,15 +15,15 @@ The shell is basically a program that takes your commands from the keyboard and 
 * `env` : show environment variable
 * `echo $ENV_VAR_NAME` : show value of certain environment variable on stdout
 * `history` : display history command list
-* `cat /proc/uptime`
+
+
+## 时间管理
 * `who -b`: 查看最后一次系统启动的时间
 * `who -r`: 查看当前系统运行时间
 * `last reboot`: Linux系统历史启动的时间
 
-  
-
-
-
+### * `cat /proc/uptime`
+**第一列输出的是，系统启动到现在的时间（以秒为单位）**
 
 ## 软链接 `ln`
 * `ln -s src_path dst_path`: 创建软链接
@@ -41,5 +41,5 @@ The shell is basically a program that takes your commands from the keyboard and 
 https://www.runoob.com/w3cnote/linux-check-port-usage.html
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzOTAzMjQ5MiwzNzMzNTQxMjldfQ==
+eyJoaXN0b3J5IjpbMTIxNDgyNTU4LDM3MzM1NDEyOV19
 -->
