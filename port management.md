@@ -5,12 +5,12 @@
 
 ```sh
 Active Internet connections (w/o servers)
-Proto Recv-Q Send-Q Local Address Foreign Address State
-tcp   0      2 210.34.6.89:telnet 210.34.6.96:2873 ESTABLISHED
-tcp   296    0 210.34.6.89:1165 210.34.6.84:netbios-ssn ESTABLISHED
-tcp   0 0 localhost.localdom:9001 localhost.localdom:1162 ESTABLISHED
-tcp   0 0 localhost.localdom:1162 localhost.localdom:9001 ESTABLISHED
-tcp   0 80 210.34.6.89:1161 210.34.6.10:netbios-ssn CLOSE
+Proto  Recv-Q  Send-Q  Local Address            Foreign Address          State
+tcp    0       2       210.34.6.89:telnet       210.34.6.96:2873         ESTABLISHED
+tcp    296     0       210.34.6.89:1165         210.34.6.84:netbios-ssn  ESTABLISHED
+tcp    0       0       localhost.localdom:9001  localhost.localdom:1162  ESTABLISHED
+tcp    0       0       localhost.localdom:1162  localhost.localdom:9001  ESTABLISHED
+tcp    0       80      210.34.6.89:1161         210.34.6.10:netbios-ssn  CLOSE
 
 Active UNIX domain sockets (w/o servers)
 Proto RefCnt Flags Type State I-Node Path
@@ -28,5 +28,5 @@ unix 1 [ ] STREAM CONNECTED 16182 @000000df
 https://www.runoob.com/w3cnote/linux-check-port-usage.html
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NzgwMjA0OV19
+eyJoaXN0b3J5IjpbLTIxMTMyMjAzODFdfQ==
 -->
