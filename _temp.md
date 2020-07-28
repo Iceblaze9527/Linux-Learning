@@ -16,14 +16,26 @@ The shell is basically a program that takes your commands from the keyboard and 
 * `echo $ENV_VAR_NAME` : show value of certain environment variable on stdout
 * `history` : display history command list
 
-
 ## 时间管理
 * `who -b`: 查看最后一次系统启动的时间
 * `who -r`: 查看当前系统运行时间
 * `last reboot`: Linux系统历史启动的时间
 
-### * `cat /proc/uptime`
-**第一列输出的是，系统启动到现在的时间（以秒为单位）**
+### `cat /proc/uptime`
+* 第一列输出的是系统启动到现在的时间（以秒为单位）
+* 第二列输出的是系统空闲的时间（以秒为单位）
+
+在SMP系统里，系统空闲的时间有时会是系统运行时间的几倍，这是怎么回事呢？  
+因为系统空闲时间的计算，是把SMP算进去的，就是所你有几个逻辑的CPU（包括超线程）。
+
+系统的空闲率(%) = num2/(num1*N) 其中N是SMP系统中的CPU个数。
+
+从上面我的一台机器上的数据可知，  
+本机启动到现在的时间长度为：6447032.12 seconds = 74.6 days  
+空闲率为:48185264.69/(6447032.12*8)=93.4%
+
+系统空闲率越大，说明系统比较闲，可以加重一些负载；而系统空闲率很小，则可能考虑升级本机器硬件或者迁移部分负载到其他机器上。
+
 
 ## 软链接 `ln`
 * `ln -s src_path dst_path`: 创建软链接
@@ -41,5 +53,5 @@ The shell is basically a program that takes your commands from the keyboard and 
 https://www.runoob.com/w3cnote/linux-check-port-usage.html
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxNDgyNTU4LDM3MzM1NDEyOV19
+eyJoaXN0b3J5IjpbLTExNDcwMTU0OTksMzczMzU0MTI5XX0=
 -->
