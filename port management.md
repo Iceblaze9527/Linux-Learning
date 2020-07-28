@@ -20,10 +20,14 @@ unix   9       [ ]    DGRAM   5292       /dev/log
 unix   1       [ ]    STREAM  CONNECTED  16182   @000000df
 ```
 
-- Active Internet connections，称为有源TCP连接，其中"Recv-Q"和"Send-Q"指%0A的是接收队列和发送队列。这些数字一般都应该是0。如果不是则表示软件包正在队列中堆积。这种情况只能在非常少的情况见到。
-
-另一个是Active UNIX domain sockets，称为有源Unix域套接口(和网络套接字一样，但是只能用于本机通信，性能可以提高一倍)。  
-Proto显示连接使用的协议,RefCnt表示连接到本套接口上的进程号,Types显示套接口的类型,State显示套接口当前的状态,Path表示连接到套接口的其它进程使用的路径名。
+- `Active Internet connections`: 有源TCP连接
+	- `Recv-Q` 和 `Send-Q`: 接收队列和发送队列。这些数字一般都应该是0。如果不是则表示软件包正在队列中堆积。这种情况只能在非常少的情况见到。
+- `Active UNIX domain sockets`: 有源Unix域套接口(和网络套接字一样，但是只能用于本机通信，性能可以提高一倍)。  
+	- `Proto`: 显示连接使用的协议
+	- `RefCnt`: 表示连接到本套接口上的进程号
+	- `Types`: 显示套接口的类型
+	- `State` 显示套接口当前的状态
+	- `Path` 表示连接到套接口的其它进程使用的路径名
 
 
 
@@ -36,5 +40,5 @@ Proto显示连接使用的协议,RefCnt表示连接到本套接口上的进程�
 https://www.runoob.com/w3cnote/linux-check-port-usage.html
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1NTE5MDgwXX0=
+eyJoaXN0b3J5IjpbMzM1NzA3NTc5XX0=
 -->
