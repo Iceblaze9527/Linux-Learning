@@ -5,8 +5,12 @@
 * `env` : show environment variable
 * `echo $ENV_VAR_NAME` : show value of certain environment variable on stdout
 * `history` : display history command list
+
 * `netstat -ntlp`: 查看当前所有tcp端口 
 * `netstat -ntulp | grep 3306`:  查看所有3306端口使用情况
+
+## 软链接
+* `ln -s src_path dst_path`: 软链接
 
 https://www.runoob.com/w3cnote/linux-check-port-usage.html
 
@@ -27,5 +31,5 @@ yutongx
 hello
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzczMzU0MTI5XX0=
+eyJoaXN0b3J5IjpbLTI3Mzk2NTAxNCwzNzMzNTQxMjldfQ==
 -->
