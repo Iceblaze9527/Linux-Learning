@@ -1,8 +1,9 @@
 # Port Management
 
-## `netstat`
+## 1. `netstat`
 `netstat` 命令用于显示各种网络相关信息，如网络连接，路由表，接口状态 (Interface Statistics)，masquerade 连接，多播成员 (Multicast Memberships) 等等。
 
+### 1.1 输出信息
 ```sh
 Active Internet connections (w/o servers)
 Proto  Recv-Q  Send-Q  Local Address            Foreign Address          State
@@ -26,9 +27,23 @@ unix   1       [ ]    STREAM  CONNECTED  16182   @000000df
 	- `Proto`: 显示连接使用的协议
 	- `RefCnt`: 表示连接到本套接口上的进程号
 	- `Types`: 显示套接口的类型
-	- `State` 显示套接口当前的状态
-	- `Path` 表示连接到套接口的其它进程使用的路径名
+	- `State`: 显示套接口当前的状态
+	- `Path`: 表示连接到套接口的其它进程使用的路径名
 
+### 1.2 参数
+- `-a (all)`: 显示所有选项，默认不显示LISTEN相关  
+- `-t (tcp)`: 仅显示tcp相关选项  
+- `-u (udp)`: 仅显示udp相关选项  
+- `-n`: 拒绝显示别名，能显示数字的全部转化成数字。  
+- -l 仅列出有在 Listen (监听) 的服務状态
+
+-p 显示建立相关链接的程序名  
+-r 显示路由信息，路由表  
+-e 显示扩展信息，例如uid等  
+-s 按各个协议进行统计  
+-c 每隔一个固定时间，执行该netstat命令。
+
+提示：LISTEN和LISTENING的状态只有用-a或者-l才能看到
 
 
 
@@ -40,5 +55,5 @@ unix   1       [ ]    STREAM  CONNECTED  16182   @000000df
 https://www.runoob.com/w3cnote/linux-check-port-usage.html
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM1NzA3NTc5XX0=
+eyJoaXN0b3J5IjpbLTk0OTY2MDcxNF19
 -->
