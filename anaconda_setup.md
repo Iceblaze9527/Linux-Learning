@@ -8,12 +8,12 @@ Like this: [Anaconda3-2020.07-Linux-x86_64.sh](https://repo.anaconda.com/archive
 
 ## 3. Use `wget` to download the bash installer
 ```sh
-$ wget https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
+$ wget https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh
 ```
 
 ## 4. Run the bash script to install Anaconda3
 ```sh
-$ bash Anaconda3-2020.02-Linux-x86_64.sh
+$ bash Anaconda3-2020.07-Linux-x86_64.sh
 ```
 Accept the Licence Agreement and allow Anaconda to be added to your `PATH`. By adding Anaconda to your `PATH`, the Anaconda distribution of Python will be called when you type `$ python` in a terminal.
 
@@ -32,5 +32,5 @@ $ source .bashrc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMjg5NjUxMSwyMDU1MDY3NjgxXX0=
+eyJoaXN0b3J5IjpbLTEzNjA2MzY0MDUsMjA1NTA2NzY4MV19
 -->
