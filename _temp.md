@@ -10,7 +10,9 @@
 * `netstat -ntulp | grep 3306`:  查看所有3306端口使用情况
 
 ## 软链接
-* `ln -s src_path dst_path`: 软链接
+* `ln -s src_path dst_path`: 创建软链接
+* `rm -rf dst_path`: 删除软链接
+* `ln –snf [新的源文件或目录] [目标文件或目录]`
 
 https://www.runoob.com/w3cnote/linux-check-port-usage.html
 
@@ -31,5 +33,5 @@ yutongx
 hello
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3Mzk2NTAxNCwzNzMzNTQxMjldfQ==
+eyJoaXN0b3J5IjpbNDIxNjc2NzQzLDM3MzM1NDEyOV19
 -->
