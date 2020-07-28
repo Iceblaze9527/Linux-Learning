@@ -16,20 +16,11 @@ The shell is basically a program that takes your commands from the keyboard and 
 * `echo $ENV_VAR_NAME` : show value of certain environment variable on stdout
 * `history` : display history command list
 * `cat /proc/uptime`
-
-2.查看/proc/uptime文件计算系统启动时间  
-
-输出: 5113396.94 575949.85  
-第一数字即是系统已运行的时间5113396.94 秒，运用系统工具date即可算出系统启动时间
-
-代码: [全选](http://bbs.freesinno.com/viewtopic.php?t=66)
-
-`date -d "$(awk -F. '{print $1}' /proc/uptime) second ago" +"%Y-%m-%d %H:%M:%S"`
+* `who -b`: 查看最后一次系统启动的时间
+* `who -r`: 查看当前系统运行时间
+* `last reboot`: Linux系统历史启动的时间
 
   
-输出: 2008-11-09 11:50:31  
-  
-3.查看/proc/uptime文件计算系统运行时间
 
 
 
@@ -50,5 +41,5 @@ The shell is basically a program that takes your commands from the keyboard and 
 https://www.runoob.com/w3cnote/linux-check-port-usage.html
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjY0MDQzMTksMzczMzU0MTI5XX0=
+eyJoaXN0b3J5IjpbMTMzOTAzMjQ5MiwzNzMzNTQxMjldfQ==
 -->
