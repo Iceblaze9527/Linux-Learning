@@ -4,7 +4,7 @@
 Go to the following link: [Anaconda.com/downloads](https://www.anaconda.com/download/)
 
 ## 2. Get the link of latest version of Anaconda on Linux
-Like this: [Anaconda3-2020.02-Linux-x86_64.sh](https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh)
+Like this: [Anaconda3-2020.07-Linux-x86_64.sh](https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh)
 
 ## 3. Use `wget` to download the bash installer
 ```sh
@@ -32,5 +32,5 @@ $ source .bashrc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NTA2NzY4MV19
+eyJoaXN0b3J5IjpbLTYxMjg5NjUxMSwyMDU1MDY3NjgxXX0=
 -->
