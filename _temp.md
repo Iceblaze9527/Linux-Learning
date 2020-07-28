@@ -7,7 +7,7 @@ A Linux system is divided into three main parts:
 
 The shell is basically a program that takes your commands from the keyboard and sends them to the operating system to perform.
 
-## 一些命令
+## Undefined
 * `date`: 显示当前日期和时间
 * `whoami`: 显示当前用户
 * `alias` : give certain command an alias in one session (expired after reboot)
@@ -16,5 +16,5 @@ The shell is basically a program that takes your commands from the keyboard and 
 * `echo $ENV_VAR_NAME` : show value of certain environment variable on stdout
 * `history` : display history command list
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTg4ODAwNTIsMzczMzU0MTI5XX0=
+eyJoaXN0b3J5IjpbLTE4NDc0Mjc2MjIsMzczMzU0MTI5XX0=
 -->
