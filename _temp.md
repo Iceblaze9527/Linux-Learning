@@ -10,8 +10,7 @@ The shell is basically a program that takes your commands from the keyboard and 
 ## TODO
 * `du`
 * `df`
-* `.local/share/Trash/files`
-
+* `find . -type f | wc -l`
 
 ## Undefined
 * `date`: 显示当前日期和时间
@@ -22,5 +21,6 @@ The shell is basically a program that takes your commands from the keyboard and 
 * `echo $ENV_VAR_NAME` : show value of certain environment variable on stdout
 * `history` : display history command list
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjA3Mzc3MzEsMzczMzU0MTI5XX0=
+eyJoaXN0b3J5IjpbMTY0OTUxNjE2NiwtMTIyMDczNzczMSwzNz
+MzNTQxMjldfQ==
 -->
