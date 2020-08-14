@@ -8,19 +8,17 @@ A Linux system is divided into three main parts:
 The shell is basically a program that takes your commands from the keyboard and sends them to the operating system to perform.
 
 ## TODO
-* `du`
-* `df`
 * `find . -type f | wc -l`
+* `alias new_command='old_command'` 
 
 ## Undefined
 * `date`: 显示当前日期和时间
 * `whoami`: 显示当前用户
-* `alias new_command='old_command'` 
 * `unalias` : opposite of alias
 * `env` : show environment variable
 * `echo $ENV_VAR_NAME` : show value of certain environment variable on stdout
 * `history` : display history command list
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk5ODUzNDIzLDE2NDk1MTYxNjYsLTEyMj
-A3Mzc3MzEsMzczMzU0MTI5XX0=
+eyJoaXN0b3J5IjpbLTc2ODI2MjIzMiwxNjQ5NTE2MTY2LC0xMj
+IwNzM3NzMxLDM3MzM1NDEyOV19
 -->
