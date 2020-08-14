@@ -15,12 +15,12 @@ The shell is basically a program that takes your commands from the keyboard and 
 ## Undefined
 * `date`: 显示当前日期和时间
 * `whoami`: 显示当前用户
-* `alias` : give certain command an alias in one session (expired after reboot)
+* `alias new_command='old_command'` 
 * `unalias` : opposite of alias
 * `env` : show environment variable
 * `echo $ENV_VAR_NAME` : show value of certain environment variable on stdout
 * `history` : display history command list
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0OTUxNjE2NiwtMTIyMDczNzczMSwzNz
-MzNTQxMjldfQ==
+eyJoaXN0b3J5IjpbNTk5ODUzNDIzLDE2NDk1MTYxNjYsLTEyMj
+A3Mzc3MzEsMzczMzU0MTI5XX0=
 -->
