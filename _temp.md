@@ -12,6 +12,7 @@ The shell is basically a program that takes your commands from the keyboard and 
 * `alias new_command='old_command'` 
 * `nohup <command> &`
 * jdk installation via `.tar`
+* 
 
 ## Undefined
 * `date`: 显示当前日期和时间
@@ -21,7 +22,7 @@ The shell is basically a program that takes your commands from the keyboard and 
 * `echo $ENV_VAR_NAME` : show value of certain environment variable on stdout
 * `history` : display history command list
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1NzY2NzAwOSwtMTk4Njk5NjQxNSwtNz
-Y4MjYyMjMyLDE2NDk1MTYxNjYsLTEyMjA3Mzc3MzEsMzczMzU0
-MTI5XX0=
+eyJoaXN0b3J5IjpbLTE4OTEwODg2NDksLTk1NzY2NzAwOSwtMT
+k4Njk5NjQxNSwtNzY4MjYyMjMyLDE2NDk1MTYxNjYsLTEyMjA3
+Mzc3MzEsMzczMzU0MTI5XX0=
 -->
