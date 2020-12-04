@@ -13,7 +13,7 @@ The shell is basically a program that takes your commands from the keyboard and 
 * `nohup <command> &`
 * jdk installation via `.tar`
 * more of `ps` and `top`
-* 
+* `sudo dpkg -i`
 
 ## Undefined
 * `date`: 显示当前日期和时间
@@ -23,7 +23,7 @@ The shell is basically a program that takes your commands from the keyboard and 
 * `echo $ENV_VAR_NAME` : show value of certain environment variable on stdout
 * `history` : display history command list
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzODM5MTA5MCwxMDIxNjY0NjA0LC05NT
+eyJoaXN0b3J5IjpbLTg0MzAwNjc2NSwxMDIxNjY0NjA0LC05NT
 c2NjcwMDksLTE5ODY5OTY0MTUsLTc2ODI2MjIzMiwxNjQ5NTE2
 MTY2LC0xMjIwNzM3NzMxLDM3MzM1NDEyOV19
 -->
