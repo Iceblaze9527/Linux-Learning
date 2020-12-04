@@ -2,7 +2,7 @@
 
 ## 1. Visit the Anaconda downloads page
 Go to the following link: [Anaconda.com/downloads](https://www.anaconda.com/download/)
-Or TUNA link: []
+Or TUNA link in China: [Anaconda/archive](https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/)
 
 ## 2. Get the link of latest version of Anaconda on Linux
 Like this: [Anaconda3-2020.07-Linux-x86_64.sh](https://repo.anaconda.com/archive/Anaconda3-2020.07-Linux-x86_64.sh)
@@ -33,6 +33,6 @@ $ source .bashrc
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDMxMjUzOTQsLTEzNjA2MzY0MDUsMj
-A1NTA2NzY4MV19
+eyJoaXN0b3J5IjpbLTQyNDA5MDY3MCwtMTM2MDYzNjQwNSwyMD
+U1MDY3NjgxXX0=
 -->
