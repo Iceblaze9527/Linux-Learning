@@ -1,4 +1,4 @@
-# Setup RPi System (using Mac)
+# [Setup RPi System (using Mac)]()
 ## 1. Determine SD device
 Insert the SD card in the slot or connect the SD card reader with the SD card inside.
 
@@ -53,19 +53,13 @@ The disk must be unmounted before copying the image
 ### 3.3 Troubleshooting
 - If the command reports `dd: DISK_IDENTIFIER: Resource busy`, you need to unmount the volume first `sudo diskutil unmountDisk DISK_IDENTIFIER`.
 - If the command reports `dd: bs: illegal numeric value`, change the block size `bs=1m` to `bs=1M`.
-If the command reports dd: /dev/rdiskN: Operation not permitted, go to System Preferences -> Security & Privacy -> Privacy -> Files and Folders -> Give Removable Volumes access to Terminal.
-
-If the command reports dd: /dev/rdiskN: Permission denied, the partition table of the SD card is being protected against being overwritten by Mac OS. Erase the SD card's partition table using this command:
-
-sudo diskutil partitionDisk /dev/diskN 1 MBR "Free Space" "%noformat%" 100%
-
-That command will also set the permissions on the device to allow writing. Now issue the dd command again.
+- If the command reports `dd: DISK_IDENTIFIER: Operation not permitted`, go to `System Preferences -> Security & Privacy -> Privacy -> Files and Folders -> Give Removable Volumes access to Terminal`.
+- If the command reports `dd: DISK_IDENTIFIER: Permission denied, the partition table of the SD card is being protected against being overwritten by Mac OS`. Erase the SD card's partition table using this command: `sudo diskutil partitionDisk /dev/diskN 1 MBR "Free Space" "%noformat%" 100%` That command will also set the permissions on the device to allow writing. Now issue the `dd` command again.
 
 ## 4. Eject
+After the `dd` command finishes, eject the card:
 
-After the dd command finishes, eject the card:
-
-sudo diskutil eject /dev/rdiskN
+`sudo diskutil eject DISK_IDENTIFIER`
 
 
 
@@ -73,5 +67,5 @@ sudo diskutil eject /dev/rdiskN
 For the official Raspberry Pi OS, if you need to manually log in, the default user name is `pi`, with password `raspberry`. Remember the default keyboard layout is set to UK.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMTQ0NzU1N119
+eyJoaXN0b3J5IjpbMTUyMjg0NzQ4MV19
 -->
