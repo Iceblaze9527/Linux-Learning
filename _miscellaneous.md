@@ -94,6 +94,9 @@ lsof打开的文件可以是：
 ### 参数含义
 * `-n`: 把符号链接视为一般目录
 * `-s`: 软链接(符号链接)
+
+## `alias` and `unalias`
+* `alias new_command='old_command'` 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NDkyMzgzNV19
+eyJoaXN0b3J5IjpbLTkzNzE3NjczMSwxNTk0OTIzODM1XX0=
 -->
