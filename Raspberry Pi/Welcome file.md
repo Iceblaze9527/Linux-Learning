@@ -29,12 +29,14 @@ $ diskutil list
 the SD card is /dev/disk2 - your disk and partition list may vary
 
 ## 2. Erase the SD card (if necessary)
+The basic syntax for erasing a disk from the command line in macOS is as follows:
 
+`diskutil eraseDisk FILE_SYSTEM DISK_NAME DISK_IDENTIFIER`
 
-
+Erase the disk file system to 
 
 For the official Raspberry Pi OS, if you need to manually log in, the default user name is `pi`, with password `raspberry`. Remember the default keyboard layout is set to UK.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU5NzcxODAyXX0=
+eyJoaXN0b3J5IjpbMTM5Nzc3MzI0Nl19
 -->
