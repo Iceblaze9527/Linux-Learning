@@ -38,9 +38,10 @@ Erase the disk file system to `FAT32`
 ## 3. Copy the image
 Note: The use of the dd tool can overwrite any partition of your machine. If you specify the wrong device in the instructions, you could overwrite your primary Mac OS partition!
 
-    The disk must be unmounted before copying the image
+### 3.1 Unmount Disk
+The disk must be unmounted before copying the image
 
-    diskutil unmountDisk /dev/diskN
+`diskutil unmountDisk /dev/diskN`
 
     Copy the image
 
@@ -74,5 +75,5 @@ sudo diskutil eject /dev/rdiskN
 For the official Raspberry Pi OS, if you need to manually log in, the default user name is `pi`, with password `raspberry`. Remember the default keyboard layout is set to UK.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI3NzQxNDBdfQ==
+eyJoaXN0b3J5IjpbLTMxOTg0MjMwNl19
 -->
