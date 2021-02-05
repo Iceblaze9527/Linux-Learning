@@ -36,7 +36,7 @@ The basic syntax for erasing a disk from the command line in macOS is as follows
 Erase the disk file system to `FAT32`
 
 ## 3. Copy the image
-> Note: The use of the dd tool can overwrite any partition of your machine. If you specify the wrong device in the instructions, you could overwrite your primary Mac OS partition!
+> Note: The use of the dd tool can overwrite any partition of your machine. ==If you specify the wrong device in the instructions, you could overwrite your primary Mac OS partition!==
 
 ### 3.1 Unmount Disk
 The disk must be unmounted before copying the image
@@ -50,19 +50,18 @@ The disk must be unmounted before copying the image
 > Note: the rdisk ('raw disk') instead of disk, this speeds up the copying.
 > This can take more than 15 minutes, depending on the image file size. Check the progress by pressing Ctrl+T.
 
-  If the command reports dd: /dev/rdiskN: Resource busy, you need to unmount the volume first sudo diskutil unmountDisk /dev/diskN.
+### 3.3 Troubleshooting
+- If the command reports `dd: DISK_IDENTIFIER: Resource busy`, you need to unmount the volume first `sudo diskutil unmountDisk DISK_IDENTIFIER`.
+- If the command reports `dd: bs: illegal numeric value`, change the block size `bs=1m` to `bs=1M`.
+If the command reports dd: /dev/rdiskN: Operation not permitted, go to System Preferences -> Security & Privacy -> Privacy -> Files and Folders -> Give Removable Volumes access to Terminal.
 
-  If the command reports dd: bs: illegal numeric value, change the block size bs=1m to bs=1M.
+If the command reports dd: /dev/rdiskN: Permission denied, the partition table of the SD card is being protected against being overwritten by Mac OS. Erase the SD card's partition table using this command:
 
-  If the command reports dd: /dev/rdiskN: Operation not permitted, go to System Preferences -> Security & Privacy -> Privacy -> Files and Folders -> Give Removable Volumes access to Terminal.
+sudo diskutil partitionDisk /dev/diskN 1 MBR "Free Space" "%noformat%" 100%
 
-  If the command reports dd: /dev/rdiskN: Permission denied, the partition table of the SD card is being protected against being overwritten by Mac OS. Erase the SD card's partition table using this command:
+That command will also set the permissions on the device to allow writing. Now issue the dd command again.
 
-  sudo diskutil partitionDisk /dev/diskN 1 MBR "Free Space" "%noformat%" 100%
-
-  That command will also set the permissions on the device to allow writing. Now issue the dd command again.
-
-Eject
+## 4. Eject
 
 After the dd command finishes, eject the card:
 
@@ -74,5 +73,5 @@ sudo diskutil eject /dev/rdiskN
 For the official Raspberry Pi OS, if you need to manually log in, the default user name is `pi`, with password `raspberry`. Remember the default keyboard layout is set to UK.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1MjM3NTMzNl19
+eyJoaXN0b3J5IjpbMTgzMTQ0NzU1N119
 -->
