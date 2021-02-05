@@ -13,9 +13,9 @@ Exactly how much current (mA) the Raspberry Pi requires is dependent on what you
 | Raspberry Pi 3 Model B | 2.5A| 1.2A| 400mA |
 | Raspberry Pi 3 Model A+| 2.5A| Limited by PSU, board, and connector ratings only.| 350mA |
 | Raspberry Pi 3 Model B+| 2.5A| 1.2A| 500mA |
-| Raspberry Pi 4 Model B | 3.0A| 1.2A| 600mA |
+| ==Raspberry Pi 4 Model B== | 3.0A| 1.2A| 600mA |
 | Raspberry Pi Zero| 1.2A| Limited by PSU, board, and connector ratings only | 100mA |
-| Raspberry Pi Zero W/WH | 1.2A| Limited by PSU, board, and connector ratings only.| 150mA |
+| ==Raspberry Pi Zero W/WH== | 1.2A| Limited by PSU, board, and connector ratings only.| 150mA |
 
 Raspberry Pi have developed their own power supplies for use with all models. These are reliable, use heavy gauge wires and are reasonably priced.
 
@@ -26,7 +26,6 @@ The power requirements of the Raspberry Pi increase as you make use of the vario
 If you need to connect a USB device that will take the power requirements above the values specified in the table above, then you must connect it to an externally-powered USB hub.
 
 ## Power Supply Warnings
-
 On all models of Raspberry Pi since the Raspberry Pi B+ (2014) except the Zero range, there is low-voltage detection circuitry that will detect if the supply voltage drops below 4.63V (+/- 5%). This will result in a [warning icon](https://www.raspberrypi.org/documentation/configuration/warning-icons.md) being displayed on all attached displays and an entry being added to the kernel log.
 
 If you are seeing warnings, you should improve the power supply and/or cable, as low power can cause problems with corruption of SD cards, or erratic behaviour of the Pi itself; for example, unexplained crashes.
@@ -34,8 +33,7 @@ If you are seeing warnings, you should improve the power supply and/or cable, as
 Voltages can drop for a variety of reasons, for example if the power supply itself is inadequate, the power supply cable is made of too thin wires, or you have plugged in high demand USB devices.
 
 ## Backpowering
-
 Backpowering occurs when USB hubs do not provide a diode to stop the hub from powering against the host computer. Other hubs will provide as much power as you want out each port. Please also be aware that some hubs will backfeed the Raspberry Pi. This means that the hubs will power the Raspberry Pi through its USB cable input cable, without the need for a separate micro-USB power cable, and bypass the voltage protection. If you are using a hub that backfeeds to the Raspberry Pi and the hub experiences a power surge, your Raspberry Pi could potentially be damaged.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI5NTU1NzEyXX0=
+eyJoaXN0b3J5IjpbLTExNTE1OTUyNF19
 -->
