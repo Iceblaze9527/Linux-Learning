@@ -3,6 +3,20 @@ The power supply requirements differ by Raspberry Pi model. All models require a
 
 Exactly how much current (mA) the Raspberry Pi requires is dependent on what you connect to it. The following table gives various current requirements.
 
+| Product| Recommended PSU current capacity  | Maximum total USB peripheral current draw     | Typical bare-board active current consumption |
+|--------------------------|-----------------------------------|-----------------------------------------------------|-----------------------------------------------|
+| Raspberry Pi Model A     | 700mA                       | 500mA                                               | 200mA                                         |
+| Raspberry Pi Model B     | 1.2A                              | 500mA                                               | 500mA                                         |
+| Raspberry Pi Model A+    | 700mA                             | 500mA                                               | 180mA                                         |
+| Raspberry Pi Model B+    | 1.8A                              | 1.2A                                                | 330mA                                         |
+| Raspberry Pi 2 Model B   | 1.8A                              | 1.2A                                                | 350mA                                         |
+| Raspberry Pi 3 Model B   | 2.5A                              | 1.2A                                                | 400mA                                         |
+| Raspberry Pi 3 Model A+  | 2.5A                              | Limited by PSU, board, and connector ratings only.  | 350mA                                         |
+| Raspberry Pi 3 Model B+  | 2.5A                              | 1.2A                                                | 500mA                                         |
+| Raspberry Pi 4 Model B   | 3.0A                              | 1.2A                                                | 600mA                                         |
+| Raspberry Pi Zero        | 1.2A                              | Limited by PSU, board, and connector ratings only   | 100mA                                         |
+| Raspberry Pi Zero W/WH   | 1.2A                              | Limited by PSU, board, and connector ratings only.  | 150mA                                         |
+
 
 Raspberry Pi have developed their own power supplies for use with all models. These are reliable, use heavy gauge wires and are reasonably priced.
 
@@ -24,5 +38,5 @@ Voltages can drop for a variety of reasons, for example if the power supply itse
 
 Backpowering occurs when USB hubs do not provide a diode to stop the hub from powering against the host computer. Other hubs will provide as much power as you want out each port. Please also be aware that some hubs will backfeed the Raspberry Pi. This means that the hubs will power the Raspberry Pi through its USB cable input cable, without the need for a separate micro-USB power cable, and bypass the voltage protection. If you are using a hub that backfeeds to the Raspberry Pi and the hub experiences a power surge, your Raspberry Pi could potentially be damaged.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNjIxOTU0Ml19
+eyJoaXN0b3J5IjpbLTE0NDg5MjI4M119
 -->
