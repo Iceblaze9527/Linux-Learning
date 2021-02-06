@@ -72,9 +72,10 @@ Host host_name: 表示需要启用该规则的服务端（域名或ip）
 
 ## 4. SSH Key Generation on Unix/Linux
 1. `$ cd ~/.ssh`: open user dir
-2. `$ ssh-keygen -t rsa -C "email@example.com"`: this would generate two files: `id_rsa` (private key) and `id_rsa.pub` (public key)
+2. `$ ssh-keygen -t ed25519/rsa -C "email@example.com"`: this would generate two files: `id_rsa` (private key) and `id_rsa.pub` (public key)
 3. `$ cat id_rsa.pub`: get public key
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk1OTUzMDkzLDM3MTE2MjE0N119
+eyJoaXN0b3J5IjpbNTU3NDA2NjE3LDk5NTk1MzA5MywzNzExNj
+IxNDddfQ==
 -->
