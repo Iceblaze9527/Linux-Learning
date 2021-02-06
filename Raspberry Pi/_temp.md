@@ -1,3 +1,10 @@
+-   SPI
+    -   SPI0: MOSI (GPIO10); MISO (GPIO9); SCLK (GPIO11); CE0 (GPIO8), CE1 (GPIO7)
+    -   SPI1: MOSI (GPIO20); MISO (GPIO19); SCLK (GPIO21); CE0 (GPIO18); CE1 (GPIO17); CE2 (GPIO16)
+-   I2C
+    -   Data: (GPIO2); Clock (GPIO3)
+    -   EEPROM Data: (GPIO0); EEPROM Clock (GPIO1)
+
 ### 1.2 I2C-Tools
 I2C-Tools are utilities for ease of monitoring and identifying I2C devices. These tools are also important for fault diagnosis. You can get the tools with: `sudo apt-get install i2c-tools`
 
@@ -39,5 +46,5 @@ I2C-Tools are utilities for ease of monitoring and identifying I2C devices. Thes
 - `0x68` Specifies the address of the chip on that bus.
 - `0x00` Specifies the address on that chip to read from.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NzM3NDExMl19
+eyJoaXN0b3J5IjpbLTE3MzQyNTg1MzcsLTY2NzM3NDExMl19
 -->
