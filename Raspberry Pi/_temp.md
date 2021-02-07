@@ -1,5 +1,7 @@
-### 
+### au
 - Bus 001 Device 003: ID 0c76:161f JMTek, LLC.
+-  1 [Device         ]: USB-Audio - USB PnP Audio Device
+                      USB PnP Audio Device at usb-0000:01:00.0-1.3, full speed
 
 
 ### Port
@@ -51,6 +53,6 @@ I2C-Tools are utilities for ease of monitoring and identifying I2C devices. Thes
 - `0x68` Specifies the address of the chip on that bus.
 - `0x00` Specifies the address on that chip to read from.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjkwMjU5NzQyLC0xNzM0MjU4NTM3LC02Nj
-czNzQxMTJdfQ==
+eyJoaXN0b3J5IjpbLTIwODg0OTMwNzgsLTE3MzQyNTg1MzcsLT
+Y2NzM3NDExMl19
 -->
