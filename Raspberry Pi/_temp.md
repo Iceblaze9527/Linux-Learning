@@ -1,3 +1,8 @@
+### 
+- Bus 001 Device 003: ID 0c76:161f JMTek, LLC.
+
+
+### Port
 -   SPI
     -   SPI0: MOSI (GPIO10); MISO (GPIO9); SCLK (GPIO11); CE0 (GPIO8), CE1 (GPIO7)
     -   SPI1: MOSI (GPIO20); MISO (GPIO19); SCLK (GPIO21); CE0 (GPIO18); CE1 (GPIO17); CE2 (GPIO16)
@@ -46,5 +51,6 @@ I2C-Tools are utilities for ease of monitoring and identifying I2C devices. Thes
 - `0x68` Specifies the address of the chip on that bus.
 - `0x00` Specifies the address on that chip to read from.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzQyNTg1MzcsLTY2NzM3NDExMl19
+eyJoaXN0b3J5IjpbMjkwMjU5NzQyLC0xNzM0MjU4NTM3LC02Nj
+czNzQxMTJdfQ==
 -->
