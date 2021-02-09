@@ -1,4 +1,4 @@
-### CPU Temp
+### CPU Temp Monitoring
 `$ （/opt/vc/bin/）vcgencmd measure_temp`
 
 ### Port
@@ -50,7 +50,7 @@ I2C-Tools are utilities for ease of monitoring and identifying I2C devices. Thes
 - `0x68` Specifies the address of the chip on that bus.
 - `0x00` Specifies the address on that chip to read from.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg1MDU4MTA2LDE0NDAzNjcyMjksLTE0MT
-E5MzgwMDksMTczNTgxNzQ5NCw2MDk4OTI1MTAsLTE3MzQyNTg1
-MzcsLTY2NzM3NDExMl19
+eyJoaXN0b3J5IjpbLTkxNDM3MTYyOCwzODUwNTgxMDYsMTQ0MD
+M2NzIyOSwtMTQxMTkzODAwOSwxNzM1ODE3NDk0LDYwOTg5MjUx
+MCwtMTczNDI1ODUzNywtNjY3Mzc0MTEyXX0=
 -->
