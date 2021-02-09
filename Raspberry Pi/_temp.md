@@ -1,3 +1,6 @@
+### CPU Temp
+`$ /opt/vc/bin/vcgencmd measure_temp`
+
 ### Port
 -   SPI
     -   SPI0: MOSI (GPIO10); MISO (GPIO9); SCLK (GPIO11); CE0 (GPIO8), CE1 (GPIO7)
@@ -47,6 +50,7 @@ I2C-Tools are utilities for ease of monitoring and identifying I2C devices. Thes
 - `0x68` Specifies the address of the chip on that bus.
 - `0x00` Specifies the address on that chip to read from.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTE5MzgwMDksMTczNTgxNzQ5NCw2MD
-k4OTI1MTAsLTE3MzQyNTg1MzcsLTY2NzM3NDExMl19
+eyJoaXN0b3J5IjpbMTQ0MDM2NzIyOSwtMTQxMTkzODAwOSwxNz
+M1ODE3NDk0LDYwOTg5MjUxMCwtMTczNDI1ODUzNywtNjY3Mzc0
+MTEyXX0=
 -->
