@@ -14,6 +14,7 @@ The shell is basically a program that takes your commands from the keyboard and 
 * more of `ps` and `top`
 * `sudo dpkg -i`
 * `sudo systemctl`
+* https://cloud.tencent.com/developer/article/1484966
 
 ## Undefined
 * `date`: 显示当前日期和时间
@@ -22,7 +23,7 @@ The shell is basically a program that takes your commands from the keyboard and 
 * `echo $ENV_VAR_NAME` : show value of certain environment variable on stdout
 * `history` : display history command list
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc2NjEwMTg3LC04MTcwMTUyNjAsMTAyMT
+eyJoaXN0b3J5IjpbMzk0OTg5NTcwLC04MTcwMTUyNjAsMTAyMT
 Y2NDYwNCwtOTU3NjY3MDA5LC0xOTg2OTk2NDE1LC03NjgyNjIy
 MzIsMTY0OTUxNjE2NiwtMTIyMDczNzczMSwzNzMzNTQxMjldfQ
 ==
